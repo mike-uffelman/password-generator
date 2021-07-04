@@ -177,7 +177,7 @@ class UI {
     
 }
 
-
+  
 
 document.querySelector('form').addEventListener('change', UI.displayCounts)
 
