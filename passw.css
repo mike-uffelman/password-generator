@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+
+:root {
+    --mainColor: rgba(0, 0, 0, 1);
+    --newPassColor: rgb(25, 0, 255);
+}
+
+body {
+    
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+    height: 100vh;
+    
+    
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+section {
+    width: 100%;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+ul {
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    /*margin: .5rem 0;*/
+    
+}
+
+ul::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+
+
+.pwItem {
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 90%;
+}
+
+.alert {
+    position: relative;
+    
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity ease-in-out 350ms;
+}
+
+.new-pass-color {
+    color: var(--newPassColor);
+    transition: color ease 350ms;
+}
+
+.copy {
+    background: url(./images/copy.png);
+}
+
+img {
+    cursor: pointer;
+}
