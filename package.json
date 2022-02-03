@@ -1,0 +1,19 @@
+{
+  "name": "passwordgenerator",
+  "version": "1.0.0",
+  "description": "generate complex and safe passwords",
+  "main": "passw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike-uffelman/password-generator.git"
+  },
+  "author": "mike u",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mike-uffelman/password-generator/issues"
+  },
+  "homepage": "https://github.com/mike-uffelman/password-generator#readme"
+}

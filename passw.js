@@ -178,8 +178,8 @@ class UI {
 }
 
   
-
-document.querySelector('form').addEventListener('change', UI.displayCounts)
+//use 'input' event to show range display value change in real time vs on 'change' event with waits for mouse event to complete
+document.querySelector('form').addEventListener('input', UI.displayCounts)
 
 /*document.querySelector('form').addEventListener('change', (e) => {
         const pwDisplay = document.querySelector('#pw-display');
