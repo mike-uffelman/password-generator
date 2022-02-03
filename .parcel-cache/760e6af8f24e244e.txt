@@ -26,7 +26,7 @@
 158C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\hash-base\node_modules\readable-stream\experimentalWarning.js121436361000000000 0
 126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\type-fest\ts41\utilities.d.ts121436361000000000 0
 135C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\date-to-primitive.js121436361000000000 0
-94C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\.gitignore132883822548161461 0
+94C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\.gitignore132883826678453234 0
 118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\is-regex\package.json132883822362359486 0
 129C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\regexp\split.js121436361000000000 0
 114C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\browserify-cipher132883822358338577 1
@@ -43,7 +43,7 @@
 118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\escape-html\Readme.md130855563610000000 0
 112C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\gensync\LICENSE121436361000000000 0
 104C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\astring132883822355818896 1
-88C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\dist132883825369527854 1
+88C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\dist132883829406738866 1
 123C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\5\SameValue.js121436361000000000 0
 112C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\.bin\terser.cmd132883822365919340 0
 120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\has-tostringtag\.github132883822309636889 1
@@ -106,7 +106,7 @@
 123C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\which-typed-array\index.js121436361000000000 0
 139C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\highlight.js\styles\atelier-cave-light.css121436361000000000 0
 133C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\is-fullwidth-code-point\package.json132883822363166169 0
-94C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\index.html132883823842086687 0
+94C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\index.html132883829405577152 0
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\object.assign\.github\workflows132883822305900722 1
 136C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\postcss-reduce-transforms\dist\index.js121436361000000000 0
 131C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\is-typed-array\.github\FUNDING.yml121436361000000000 0
@@ -215,7 +215,7 @@
 124C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\yaml\dist\legacy-exports.js121436361000000000 0
 140C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\postcss-normalize-repeat-style\package.json132883822360128205 0
 113C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\mdn-data\LICENSE121436361000000000 0
-122C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\number\virtual132883822332013703 1
+122C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\number\virtual132883822332162854 1
 121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\which-typed-array\.nycrc121436361000000000 0
 118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@trysound\sax\LICENSE121436361000000000 0
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\string\index.js121436361000000000 0
@@ -464,7 +464,7 @@
 131C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2020\IsStringPrefix.js121436361000000000 0
 108C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\buffer-from132883822355798889 1
 107C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\buffer-xor132883822355779263 1
-119C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\error132883822324867782 1
+119C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\error132883822332402420 1
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\caniuse-lite\data\regions\ET.js121436361000000000 0
 118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\side-channel\index.js121436361000000000 0
 124C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\readable-stream\writable.js121436361000000000 0
@@ -929,7 +929,7 @@
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\type-fest\ts41\pascal-case.d.ts121436361000000000 0
 149C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\caniuse-lite\data\features\link-rel-modulepreload.js121436361000000000 0
 145C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\terser\node_modules\source-map\lib\mappings.wasm131709648810000000 0
-121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\core\node_modules132883822352340430 1
+121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\core\node_modules132883822364891684 1
 132C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2018\thisNumberValue.js121436361000000000 0
 117C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\hash.js\package.json132883822362083365 0
 122C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\follow-redirects\debug.js121436361000000000 0
@@ -1224,7 +1224,7 @@
 123C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@nodelib\fs.walk\README.md121436361000000000 0
 100C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\ora132883822357595919 1
 113C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\des.js\README.md121436361000000000 0
-119C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\reflect132883822330654257 1
+119C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\reflect132883822332304471 1
 107C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\is-weakref132883822362379484 1
 132C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\asn1.js\lib\asn1\constants\index.js121436361000000000 0
 129C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\symbol\replace.js121436361000000000 0
@@ -1518,7 +1518,7 @@
 110C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\shebang-regex132883822359546383 1
 124C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\postcss-ordered-values\dist132883822299022921 1
 146C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\postcss-selector-parser\dist\selectors\nesting.js121436361000000000 0
-128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\number\virtual132883822332013703 1
+128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\number\virtual132883822332172912 1
 147C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@parcel\transformer-react-refresh-wrap\src\helpers132883822288546754 1
 137C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\string.prototype.trimstart\.editorconfig121436361000000000 0
 115C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\terser\lib\size.js121436361000000000 0
@@ -3198,7 +3198,7 @@
 156C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\stream-browserify\node_modules\readable-stream\package.json132883822357536440 0
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\browserify-aes\streamCipher.js121436361000000000 0
 130C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\public-encrypt\node_modules\bn.js132883822360495418 1
-125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\dom-exception132883822325252253 1
+125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\dom-exception132883822332338423 1
 119C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\json5\lib\stringify.js121436361000000000 0
 132C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\cross-spawn\lib\util\readShebang.js132883822290470491 0
 163C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\stream-browserify\node_modules\readable-stream\readable-browser.js121436361000000000 0
@@ -3533,7 +3533,7 @@
 110C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\sha.js\sha.js132883822296253397 0
 113C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\sha.js\sha256.js132883822296429183 0
 123C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\array\of.js121436361000000000 0
-118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\symbol132883822332304471 1
+118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\symbol132883822333066340 1
 125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\querystring-es3\package.json132883822360253990 0
 113C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\sha.js\sha384.js132883822296486863 0
 108C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\sha.js\test132883822296749070 1
@@ -3546,7 +3546,7 @@
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\browserify-zlib\lib\binding.js131409793060000000 0
 125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\setimmediate\setImmediate.js131181154880000000 0
 118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\serve-handler\LICENSE121436361000000000 0
-121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\reflect132883822330679259 1
+121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\reflect132883822332334474 1
 125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\math\acosh.js121436361000000000 0
 121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2018\GetV.js121436361000000000 0
 119C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\node-forge\lib\oids.js121436361000000000 0
@@ -3822,7 +3822,7 @@
 125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\public-encrypt\withPublic.js121436361000000000 0
 125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\map\from.js121436361000000000 0
 181C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-alias-glob\package.json121436361000000000 0
-120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\array-buffer132883822325959840 1
+120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\array-buffer132883822330795085 1
 133C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\caniuse-lite\data\features\tls1-1.js121436361000000000 0
 141C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\path-browserify\test\test-path-isabsolute.js121436361000000000 0
 125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\posthtml-parser\package.json132883822360306246 0
@@ -4834,7 +4834,7 @@
 130C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\node-forge\lib\aesCipherSuites.js121436361000000000 0
 162C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\types\lib\modifications\typescript\removeTypeDuplicates.js121012626000000000 0
 115C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\node-forge\LICENSE121436361000000000 0
-120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\number132883822332013703 1
+120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\number132883822332162854 1
 134C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@parcel\resolver-default\package.json132883822356406358 0
 132C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2020\Number\lessThan.js121436361000000000 0
 113C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\lmdb\src\env.cpp121436361000000000 0
@@ -5505,7 +5505,7 @@
 148C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\lmdb\prebuilds\darwin-x64\electron.abi99.glibc.node121436361000000000 0
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\caniuse-lite\data\regions\MK.js121436361000000000 0
 145C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\lmdb\prebuilds\darwin-x64\node.abi102.glibc.node121436361000000000 0
-121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\promise132883822325098665 1
+121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\promise132883822332844306 1
 146C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@parcel\optimizer-cssnano\src\CSSNanoOptimizer.js121436361000000000 0
 136C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2018\IsSharedArrayBuffer.js121436361000000000 0
 144C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\lmdb\prebuilds\darwin-x64\node.abi72.glibc.node121436361000000000 0
@@ -5747,7 +5747,7 @@
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\caniuse-lite\data\regions\MW.js121436361000000000 0
 132C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\constants-browserify\constants.json130812848470000000 0
 141C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\jake\node_modules\color-convert\CHANGELOG.md121436361000000000 0
-114C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\object132883822332392414 1
+114C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\object132883822333230635 1
 143C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\jake\node_modules\color-convert\conversions.js121436361000000000 0
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2018\ArrayCreate.js121436361000000000 0
 137C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\jake\node_modules\color-convert\index.js121436361000000000 0
@@ -6423,7 +6423,7 @@
 144C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@swc\helpers\lib\_initializer_warning_helper.js132811082760000000 0
 132C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\highlight.js\scss\brown-papersq.png121436361000000000 0
 136C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\caniuse-lite\data\features\css-masks.js121436361000000000 0
-118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\date132883822332189021 1
+118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\date132883822332397416 1
 131C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\highlight.js\scss\github-gist.scss121436361000000000 0
 126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\highlight.js\scss\github.scss121436361000000000 0
 130C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\generic-names\.idea\encodings.xml121436361000000000 0
@@ -6497,7 +6497,7 @@
 131C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\highlight.js\lib\languages\bash.js121436361000000000 0
 136C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\highlight.js\lib\languages\brainfuck.js121436361000000000 0
 134C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2021\SetFunctionLength.js121436361000000000 0
-114C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\symbol132883822332319476 1
+114C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\symbol132883822333066340 1
 133C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\highlight.js\lib\languages\c-like.js121436361000000000 0
 134C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\has-tostringtag\test\shams\core-js.js121436361000000000 0
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\symbol\index.js121436361000000000 0
@@ -6537,7 +6537,7 @@
 133C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\highlight.js\lib\languages\groovy.js121436361000000000 0
 131C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\highlight.js\lib\languages\haml.js121436361000000000 0
 137C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\reflect\prevent-extensions.js121436361000000000 0
-118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\object132883822332363415 1
+118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\object132883822333199231 1
 139C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\iterator-create-proxy.js121436361000000000 0
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\caniuse-lite\data\regions\CD.js121436361000000000 0
 137C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\highlight.js\lib\languages\handlebars.js121436361000000000 0
@@ -7561,7 +7561,7 @@
 144C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\array\virtual\last-index-of.js121436361000000000 0
 142C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2020\BigInt\unsignedRightShift.js121436361000000000 0
 134C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@parcel\workers\test\cpuCount.test.js121436361000000000 0
-125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\typed-array132883822333278170 1
+125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\typed-array132883822333550544 1
 144C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\caniuse-lite\data\features\css3-cursors-grab.js121436361000000000 0
 120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2019\abs.js121436361000000000 0
 145C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2019\AbstractRelationalComparison.js121436361000000000 0
@@ -7680,7 +7680,7 @@
 137C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2019\StringGetOwnProperty.js121436361000000000 0
 130C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@parcel\utils\test\config.test.js121436361000000000 0
 140C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2019\SymbolDescriptiveString.js121436361000000000 0
-118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\regexp132883822331889413 1
+118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\regexp132883822332461681 1
 151C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@parcel\workers\test\integration\workerfarm\ipc-pid.js121436361000000000 0
 119C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\csso\lib\clean\Rule.js121436361000000000 0
 121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\data-view132883822323803464 1
@@ -7887,7 +7887,7 @@
 132C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\instance\group-by.js121436361000000000 0
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2017\InLeapYear.js121436361000000000 0
 135C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2017\IsConcatSpreadable.js121436361000000000 0
-118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\number132883822332023713 1
+118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\number132883822332167855 1
 142C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\modules\esnext.array.filter-reject.js121436361000000000 0
 133C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2017\IsDataDescriptor.js121436361000000000 0
 125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\es-abstract\2017\IsRegExp.js121436361000000000 0
@@ -8719,11 +8719,11 @@
 124C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\date\get-year.js121436361000000000 0
 120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stage\README.md121436361000000000 0
 130C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\aggregate-error.js121436361000000000 0
-124C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\array-buffer132883822325959840 1
+124C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\array-buffer132883822330840393 1
 124C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\object\freeze.js121436361000000000 0
 121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\data-view132883822325242288 1
-116C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\date132883822332204025 1
-117C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\error132883822325273384 1
+116C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\date132883822332439483 1
+117C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\error132883822332441687 1
 121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\escape.js121436361000000000 0
 120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\function132883822328095539 1
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\get-iterator.js121436361000000000 0
@@ -8740,9 +8740,9 @@
 138C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\function\virtual\bind.js121436361000000000 0
 118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\string132883822332802725 1
 131C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\structured-clone.js121436361000000000 0
-118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\symbol132883822332363415 1
+118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\symbol132883822333111781 1
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\instance\index-of.js121436361000000000 0
-115C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\url132883822325494299 1
+115C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\url132883822332126581 1
 138C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\proposals\map-update-or-insert.js121436361000000000 0
 120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\weak-map132883822325510987 1
 120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\weak-set132883822325531189 1
@@ -8877,7 +8877,7 @@
 136C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\number\to-exponential.js121436361000000000 0
 137C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\modules\esnext.map.delete-all.js121436361000000000 0
 130C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\number\to-fixed.js121436361000000000 0
-126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\number\virtual132883822332033705 1
+126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\number\virtual132883822332177912 1
 135C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\number\virtual\index.js121436361000000000 0
 135C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@parcel\core\src\public\Environment.js121436361000000000 0
 142C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\stable\number\virtual\to-precision.js121436361000000000 0
@@ -9277,13 +9277,13 @@
 132C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\array-includes.js121436361000000000 0
 143C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\array-iteration-from-last.js121436361000000000 0
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\array\filter.js121436361000000000 0
-117C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\error132883822323813352 1
+117C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\error132883822332363415 1
 137C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\array-last-index-of.js121436361000000000 0
 115C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\colord\colord.d.ts121436361000000000 0
 130C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\get-built-in.js121436361000000000 0
 136C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\array-slice-simple.js121436361000000000 0
 138C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\array-species-create.js121436361000000000 0
-117C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\url132883822325187604 1
+117C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\url132883822332121487 1
 133C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\array-unique-by.js121436361000000000 0
 111C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@parcel\plugin132883822356681163 1
 142C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\async-from-sync-iterator.js121436361000000000 0
@@ -9297,7 +9297,7 @@
 133C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\collection-weak.js121436361000000000 0
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\collection.js121436361000000000 0
 131C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\composite-key.js121436361000000000 0
-114C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\string132883822332648306 1
+114C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\string132883822332740759 1
 145C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\create-iterator-constructor.js121436361000000000 0
 148C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\create-non-enumerable-property.js121436361000000000 0
 115C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\.bin\is-docker.cmd132883822365249962 0
@@ -9418,13 +9418,13 @@
 151C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\internals\wrap-error-constructor-with-cause.js121436361000000000 0
 132C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\aggregate-error.js121436361000000000 0
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\async-iterator132883822331924418 1
-120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\bigint132883822324502921 1
+120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\bigint132883822330087213 1
 121C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\btoa.js121436361000000000 0
 118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@types\node\README.md132881778890000000 0
 132C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\clear-immediate.js121436361000000000 0
 130C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\composite-key.js121436361000000000 0
 123C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\data-view132883822324525358 1
-127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\dom-exception132883822324544648 1
+127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\dom-exception132883822332324471 1
 122C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\function132883822333017426 1
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\global-this.js121436361000000000 0
 122C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\index.js121436361000000000 0
@@ -9436,15 +9436,15 @@
 118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\json132883822332334474 1
 117C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\map132883822333126780 1
 146C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\number\virtual\to-exponential.js121436361000000000 0
-118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\math132883822332828011 1
-120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\object132883822332429503 1
+118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\math132883822333017426 1
+120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\object132883822333278170 1
 132C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@parcel\watcher\prebuilds\linux-x64132883822312506336 1
 126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\parse-int.js121436361000000000 0
 129C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\set-interval.js121436361000000000 0
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\set-timeout.js121436361000000000 0
 120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\string132883822332787726 1
 131C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\url-search-params132883822325139002 1
-122C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\weak-set132883822325187604 1
+122C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\weak-set132883822329337574 1
 133C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\weak-set\add-all.js121436361000000000 0
 130C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\weak-set\from.js121436361000000000 0
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\weak-set\of.js121436361000000000 0
@@ -9706,7 +9706,7 @@
 137C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\features\array\virtual\values.js121436361000000000 0
 126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\aggregate-error.js121436361000000000 0
 113C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\array132883822333209238 1
-113C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\error132883822324114126 1
+113C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\error132883822332387409 1
 135C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\helper-validator-identifier\lib132883822286215405 1
 122C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\global-this.js121436361000000000 0
 122C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\is-iterable.js121436361000000000 0
@@ -9714,7 +9714,7 @@
 114C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\number132883822332162854 1
 115C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\promise132883822324295463 1
 117C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\README.md121436361000000000 0
-115C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\reflect132883822330674259 1
+115C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\reflect132883822332309475 1
 119C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\typed-array132883822333230635 1
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\caniuse-lite\data\regions\VU.js121436361000000000 0
 116C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\weak-map132883822324458190 1
@@ -9750,7 +9750,7 @@
 122C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\string\bold.js121436361000000000 0
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\string\ends-with.js121436361000000000 0
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\string\fontcolor.js121436361000000000 0
-126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\string\virtual132883822332632880 1
+126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\string\virtual132883822332725746 1
 126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\string\fontsize.js121436361000000000 0
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@parcel\watcher\src\Watcher.hh121436361000000000 0
 129C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\es\string\replace-all.js121436361000000000 0
@@ -9927,7 +9927,7 @@
 120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\browserify-zlib\LICENSE131409792370000000 0
 116C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\date132883822332358413 1
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\dom-collections132883822326121294 1
-125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\dom-exception132883822323812445 1
+125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\dom-exception132883822332289470 1
 120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\function132883822327896821 1
 112C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\asn1.js\LICENSE121436361000000000 0
 116C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\json132883822332299471 1
@@ -9944,10 +9944,10 @@
 120C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\colord\plugins\names.js121436361000000000 0
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\set-interval.js121436361000000000 0
 126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\set-timeout.js121436361000000000 0
-118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\string132883822332627877 1
+118C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\string132883822332720743 1
 131C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\structured-clone.js121436361000000000 0
 129C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\array\flat-map.js121436361000000000 0
-123C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\typed-array132883822332992468 1
+123C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\typed-array132883822333209238 1
 131C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\traverse\scripts\generators132883822303062815 1
 128C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\caniuse-lite\data\regions\HU.js121436361000000000 0
 123C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\unescape.js121436361000000000 0
@@ -10097,7 +10097,7 @@
 138C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\number\min-safe-integer.js121436361000000000 0
 130C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\number\to-fixed.js121436361000000000 0
 134C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\caniuse-lite\data\features\ch-unit.js121436361000000000 0
-126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\number\virtual132883822331988085 1
+126C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\number\virtual132883822332162854 1
 135C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\number\virtual\index.js121436361000000000 0
 138C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\number\virtual\to-fixed.js121436361000000000 0
 125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\math\acosh.js121436361000000000 0
@@ -10196,7 +10196,7 @@
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\array\splice.js121436361000000000 0
 127C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\array\values.js121436361000000000 0
 114C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\.bin\miller-rabin132883822365346642 0
-125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\array\virtual132883822331159478 1
+125C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\array\virtual132883822333198197 1
 135C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\array\virtual\concat.js121436361000000000 0
 133C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\array\virtual\fill.js121436361000000000 0
 135C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\core-js\actual\array\virtual\filter.js121436361000000000 0
@@ -12283,7 +12283,7 @@
 143C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\helper-environment-visitor\package.json132883822358392492 0
 140C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\helper-environment-visitor\README.md121012626000000000 0
 134C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\helper-compilation-targets\lib132883822303564945 1
-143C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\helper-compilation-targets\node_modules132883822350379350 1
+143C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\helper-compilation-targets\node_modules132883822364959379 1
 150C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\helper-compilation-targets\node_modules\semver132883822355878948 1
 158C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\helper-compilation-targets\node_modules\semver\LICENSE121436361000000000 0
 163C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\node_modules\@babel\helper-compilation-targets\node_modules\semver\package.json132883822355756859 0
@@ -12430,4 +12430,4 @@
 106C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\dist\copy.a786556f.png132883823847007437 0
 111C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\dist\index.3a01df49.css.map132883825369523831 0
 110C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\dist\index.7c0ccee6.js.map132883823847113645 0
-99C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\dist\index.html132883823847007437 0
+99C:\Users\Mike\Desktop\WebDev\myWebProjects\8 - Password Generator\v2 with bootstrap\dist\index.html132883829406733877 0
