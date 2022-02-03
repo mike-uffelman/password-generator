@@ -57,14 +57,12 @@ ul::-webkit-scrollbar {
     display: none;
 }
 
-
-
 .pwItem {
     word-wrap: break-word;
     word-break: break-word;
     max-width: 90%;
 }
- 
+
 .alert {
     position: relative;
     
@@ -84,9 +82,11 @@ ul::-webkit-scrollbar {
 }
 
 .copy {
-    background: url(./images/copy.png);
+    background: url("copy.a786556f.png");
 }
 
 img {
     cursor: pointer;
 }
+
+/*# sourceMappingURL=index.3a01df49.css.map */

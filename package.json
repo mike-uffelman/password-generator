@@ -4,7 +4,8 @@
   "description": "generate complex and safe passwords",
   "main": "passw.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mike-uffelman/password-generator/issues"
   },
-  "homepage": "https://github.com/mike-uffelman/password-generator#readme"
+  "homepage": "https://github.com/mike-uffelman/password-generator#readme",
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  }
 }
