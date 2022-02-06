@@ -21,6 +21,7 @@
     "parcel": "^2.2.1"
   },
   "dependencies": {
-    "core-js": "^3.21.0"
+    "core-js": "^3.21.0",
+    "object-hash": "^2.2.0"
   }
 }

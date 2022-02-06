@@ -19,7 +19,7 @@ class appView {
 
     _clear() {
         this._parentElement.innerHTML = '';
-    }
+    } 
 
     _generateMarkup() {
         return `
