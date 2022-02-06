@@ -19,5 +19,8 @@
   "homepage": "https://github.com/mike-uffelman/password-generator#readme",
   "devDependencies": {
     "parcel": "^2.2.1"
+  },
+  "dependencies": {
+    "core-js": "^3.21.0"
   }
 }

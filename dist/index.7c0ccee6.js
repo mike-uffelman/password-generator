@@ -1,9 +1,11 @@
+'use strict';
 /*const charLists = [
     ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
     ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
     ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')'],
     ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-    ]*/ const charLists2 = {
+    ]*/ if (process.env.NODE_ENV === 'development') console.log('Happy developing!');
+const charLists2 = {
     lowerAZ: [
         "a",
         "b",
@@ -252,11 +254,12 @@ document.querySelector('form').addEventListener('input', UI.displayCounts);
 });*/ document.querySelector('#clear-list-button').addEventListener('click', (e)=>{
     UI.clearList();
 });
-document.querySelector('#copy-icon').addEventListener('click', UI.copy); /*document.querySelector('ul').addEventListener('click', (e) => {
+document.querySelector('#copy-icon').addEventListener('click', UI.copy);
+/*document.querySelector('ul').addEventListener('click', (e) => {
     
         console.log(e.target.previousElementSibling.innerText);
     
-})*/  /*document.querySelector('ul').addEventListener('click', (e) => {
+})*/ /*document.querySelector('ul').addEventListener('click', (e) => {
     if(e.target.nodeName === 'IMG') {
         const selection = document.getSelection();
         e.target.previousElementSibling.innerText.clipboardData.setData('text/plain', selection.toString());
@@ -264,7 +267,7 @@ document.querySelector('#copy-icon').addEventListener('click', UI.copy); /*docum
         UI.alert('Password copied!', 'info');
         UI.removeAlert();
     }
-});*/  /*document.querySelector('ul').addEventListener('click', (e) => {
+});*/ /*document.querySelector('ul').addEventListener('click', (e) => {
     
     if(!pwText) {
         return;
@@ -273,7 +276,11 @@ document.querySelector('#copy-icon').addEventListener('click', UI.copy); /*docum
     }
     }
         
-})*/  /*const pwText = document.getElementById('passwordText');
-    const copyIcon = document.getElementById('copy-icon');*/  /*console.log(e.target.previousElementSibling.previousElementSibling.value);*/ 
+})*/ /*const pwText = document.getElementById('passwordText');
+    const copyIcon = document.getElementById('copy-icon');*/ /*console.log(e.target.previousElementSibling.previousElementSibling.value);*/ if (module.hot) module.hot.accept();
+const init = function() {
+    console.log('app started...');
+};
+init();
 
 //# sourceMappingURL=index.7c0ccee6.js.map
