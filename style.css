@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,17 +11,21 @@
 :root {
     --mainColor: rgba(0, 0, 0, 1);
     --newPassColor: rgb(25, 0, 255);
+    --transitions: all ease 300ms;
 }
 
 
 html {
     /* font-size: 62.5%; */
+    
 }
 
 body {
     margin: 0 auto;
     /*border: 1px solid black;*/
     height: 100vh;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 form {
@@ -94,4 +100,24 @@ ul::-webkit-scrollbar {
 
 img {
     cursor: pointer;
+}
+
+.search-pw-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 10%;
+    fill: lightgray;
+    transition: var(--transitions);
+
+}
+
+.search-pw-icon > path {
+
+}
+
+.search-pw-icon:hover {
+    cursor: pointer;
+    fill: #0d6efd;
+    transition: var(--transitions);
 }

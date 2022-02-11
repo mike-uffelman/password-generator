@@ -15,8 +15,8 @@ const generatePW = function(pwLength, scCount, numCount) {
     try {
         console.log('creating password...', pwLength, scCount, numCount)
         logic.draftStr(pwLength, scCount, numCount);
-        console.log(logic.pwFinal);
-        appView._printPassword(logic.pwFinal);
+        // console.log(logic.pwFinal);
+        appView._printPassword(logic.passStore);
         appView._alert('New password created!', 'success');
         appView._removeAlert();
 
@@ -26,6 +26,11 @@ const generatePW = function(pwLength, scCount, numCount) {
         appView._removeAlert();
     }
 };
+
+const safePassValidation = function(pw) {
+    console.log('validating password...')
+    logic.vulnerabilityCheck(pw);
+}
 
 //! previous alorithm=======================
 // const generatePW = function(pwLength, scCount, numCount) {
@@ -43,7 +48,7 @@ const generatePW = function(pwLength, scCount, numCount) {
 
 const init = function() {
     appView.render();
-    appView.addHandlerGenerate(generatePW);
+    appView.addHandlerGenerate(generatePW, safePassValidation);
 
     if (module.hot) {
         module.hot.accept();
