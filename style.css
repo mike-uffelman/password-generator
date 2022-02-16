@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&display=swap');
 
 * {
     margin: 0;
@@ -24,7 +24,7 @@ body {
     margin: 0 auto;
     /*border: 1px solid black;*/
     height: 100vh;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Cairo', sans-serif;
 
 }
 
@@ -70,12 +70,61 @@ ul::-webkit-scrollbar {
 
 
 
-.pwItem {
+.pw__item {
+    position: relative;
     word-wrap: break-word;
     word-break: break-word;
-    max-width: 90%;
+    /* height: auto; */
+    padding: 0 1rem;
+    /* padding: 2rem; */
+}
+
+.pw__item:hover  .icon-desc {
+    opacity: 1;
+    transition: var(--transitions);
+}
+
+.pw__item--text {
+
+}
+
+.btn > .options__icon {
+
+    background-image: url('./images/expand_less.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    transform: scale(1, 1);
+    transform-origin: center;
+    transition: all ease 300ms;
 }
  
+.btn.collapsed > .options__icon {
+    background-image: url('./images/expand_more.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    transform: scale(1, 1);
+    transform-origin: center;
+
+    transition: all ease 300ms;
+
+}
+/* .options__icon.expand{
+    background-image: url('./images/expand_more.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-left: auto;
+
+} */
+
+/* .options__icon.close{
+    background-image: url('./images/expand_less.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    transition: var(--transitions);
+
+} */
+
 .alert {
     position: relative;
     
@@ -106,10 +155,31 @@ img {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 10%;
+    /* width: 10%; */
     fill: lightgray;
     transition: var(--transitions);
+    overflow: hidden;
 
+}
+
+.search-pw-icon.safe {
+    fill: green;
+    cursor: none;
+}
+
+.icon-desc {
+    position: absolute;
+
+    bottom: -1.5rem;
+    right: 2rem;
+    opacity: 0;
+    transition: var(--transitions);
+}
+
+
+.search-pw-icon.unsafe {
+    fill: red;
+    cursor: none;
 }
 
 .search-pw-icon > path {

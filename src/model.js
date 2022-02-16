@@ -1,5 +1,6 @@
 'use strict';
 
+
 // const hash = require('object-hash');
 const crypto = require('crypto');
 // const sha1 = require('crypto-js/sha1');
@@ -11,61 +12,78 @@ export let passStore = [];
 class Password {
     _safe;
     _id = Date.now();
-
+    pwHash;
     constructor(pw) {
         this.pw = pw;
+        
     }
 }
 
 
-let lowerAZ = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-let upperAZ = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-let specialChars = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')']
-let digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+let lowerAZCharsList = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+let upperAZCharsList = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+let specialCharsList = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')']
+let digitCharsList = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+//az 97-122
+//AZ 65-90
+//sc 33-47, 91-96, 123-126 
+//nums 48-57
 
+export const draftStr = function (pwConditions) {
+    try {
+        const { pwLength, digits, lowerAz, upperAz, specialChars} = pwConditions;
 
-
-export const draftStr = function (pwLength, scCount, numCount) {
-    console.log('draft string: ', pwLength, scCount, numCount)
-    // let az = new Array(Number(pwLength));
-    let pwArray = [];
-    while(pwArray.length < pwLength) {
-        let roll = Math.floor(Math.random() * 4 + 1)
-
-        switch(roll) {
-            case 1:
-                pwArray.push(lowerAZ[Math.floor(Math.random() * lowerAZ.length)]);
-                break;
-            case 2:
-                pwArray.push(upperAZ[Math.floor(Math.random() * upperAZ.length)]);
-                break;
-            case 3:
-                if(!scCount) break;
-                pwArray.push(specialChars[Math.floor(Math.random() * specialChars.length)]);
-                break;
-            case 4:
-                if(!numCount) break;                    
-                pwArray.push(digits[Math.floor(Math.random() * digits.length)]);
-                break;
-            default:
-                break;
-
+        let pwArray = [];
+    
+        while(pwArray.length < pwLength) {
+            let roll = Math.floor(Math.random() * 4 + 1)
+    
+            switch(roll) {
+                case 1:
+                    if(!lowerAz) break;
+                    pwArray.push(lowerAZCharsList[Math.floor(Math.random() * lowerAZCharsList.length)]);
+                    break;
+                case 2:
+                    if(!upperAz) break;
+                    pwArray.push(upperAZCharsList[Math.floor(Math.random() * upperAZCharsList.length)]);
+                    break;
+                case 3:
+                    if(!specialChars) break;
+                    pwArray.push(specialCharsList[Math.floor(Math.random() * specialCharsList.length)]);
+                    break;
+                case 4:
+                    if(!digits) break;                    
+                    pwArray.push(digitCharsList[Math.floor(Math.random() * digitCharsList.length)]);
+                    break;
+                default:
+                    break;
+    
+            }
         }
+                
+        console.log(pwArray)
+        let pwPending = pwValidation(pwArray, pwConditions);
+    
+        if(pwPending) {
+            console.log('%cpassword failed validation, re-trying...', 'color: red')
+            draftStr(pwConditions);
+        } else {
+            console.log('%cpassword passed validation!!!', 'color: green')
+            shuffle(pwArray);
+        }
+    
+        console.log('%cPassword storage array: ', 'color: magenta', passStore);
+    } catch(err) {
+        console.log('oh no something went wrong', err);
     }
-            
-    const pwPending = pwValidation(pwArray, pwLength, scCount, numCount);
+    
 
-    if(pwPending) {
-        console.log('%cpassword failed validation, re-trying...', 'color: red')
-        draftStr(pwLength, scCount, numCount);
-    } else {
-        console.log('%cpassword passed validation!!!', 'color: green')
-    }
-
-    shuffle(pwArray);
+    
 }
 
 const shuffle = function(arr) {
+    // console.log('%cPassword storage array: ', 'color: magenta', passStore);
+
     try {
         pwFinal = '';
         let currentIndex = arr.length;
@@ -86,23 +104,30 @@ const shuffle = function(arr) {
         passStore.push(newPw);
 
         pwFinal = arr.join('');
+
+        // console.log('%cPassword storage array: ', 'color: magenta', passStore);
+
     } catch(err) {
         console.log('unable to shuffle password', err)
     }
     
 }
 
-const pwValidation = function(pwArray, length, sc, nums) {
+const pwValidation = function(pwArray, pwConditions) {
+    const { pwLength, digits, lowerAz, upperAz, specialChars} = pwConditions;
     console.log('password validation check');
 
-    console.log(pwArray, length, sc, nums);
-    const digits = '(?=.*[0-9]){1,}';
-    const upLo = '(?=.*[a-z]){1,}(?=.*[A-Z]){1,}';
+    const digits09 = '(?=.*[0-9]){1,}';
+    const lower = '(?=.*[a-z]){1,}';
+    const upper = '(?=.*[A-Z]){1,}';
     const specChars = '(?=.*[!@#$%^&*()]){1,}';
     let pending;
     
   
-    const re =  new RegExp(`${nums ? digits : ''}${upLo}${sc ? specChars : ''}.{${length},}`);
+    const re =  new RegExp(`${ digits ? digits09 : ''}${lowerAz ? lower : ''}${upperAz ? upper : ''}${specialChars ? specChars : ''}.{${pwLength},}`);
+
+console.log(re);
+
     console.log(pwArray.join(''));
     if(!re.test(pwArray.join(''))) {
         console.log('%cPassword failed validation', 'color: red')
@@ -117,66 +142,31 @@ const pwValidation = function(pwArray, length, sc, nums) {
 
 }
 
-
-//! previous algorithm ====================================================
-// export const draftStr = function (pwLength, scCount, numCount) {
-//     console.log('draft string: ', pwLength, scCount, numCount)
-//     let azLength = pwLength - scCount - numCount;
-//     let sc = [], num = [], az = [];
-//     if(pwLength < (scCount + numCount)) {
-//         pwLength = (scCount + numCount)
-//     }
-    
-//     // select a to z characters
-//     // for each index, random 0 or 1, if 1 get a random lowercase a-z, else get a random A-Z and push to the az [] array
-//     for (let i = 0; i < azLength; i++) {
-//         if(Math.floor(Math.random() * 2) === 1) {
-//             az.push(charLists2['lowerAZ'][Math.floor(Math.random() * charLists2['lowerAZ'].length)])
-//         } else {
-//             az.push(charLists2['lowerAZ'][Math.floor(Math.random() * charLists2['upperAZ'].length)].toUpperCase())
-//         }
-//     }
-//     console.log(az);
-//     //for each special character count get a random character from the specialChar array and push to sc [] array
-//     for (let j = 0; j < scCount; j++) {
-//         sc.push(charLists2['specialChars'][Math.floor(Math.random() * charLists2['specialChars'].length)])
-//     }
-//     console.log(sc);
-
-//     //for each number count get a random character from the specialChar array and push to sc [] array
-//     for (let k = 0; k < numCount; k++) {
-//         num.push(charLists2['digits'][Math.floor(Math.random() * charLists2['digits'].length)])
-//     }
-//     console.log(num);
-//     console.log(az.concat(sc, num).join(''));
-
-//     // shuffle the az draft string
-//     shuffle(az.concat(sc, num));
-// }
-//!===============================================================================
-
-
-    
-export const vulnerabilityCheck = async function(pw) {
-    const pwHash = hashPass(pw);
-    checkPass(pwHash);
+export const vulnerabilityCheck = async function(item) {
+    const pwEl = passStore.find(({_id}) => _id === Number(item))
+    pwEl.pwHash = hashPass.call(pwEl, pwEl.pw);
+    await checkPass.call(pwEl, pwEl.pwHash);
+    if(pwEl._safe) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 const hashPass = function(pw) {
+    // console.log(pw);
     return crypto.createHash('sha1')
         .update(pw)
         .digest('hex');
 }
 
-
-const checkPass = async function(pass) {
-    const hashPrefix = pass.slice(0, 5);
-    const hashSuffix = pass.slice(5);
-    console.log('hashPrefix: ', hashPrefix);
-    console.log('hashSuffix: ', hashSuffix);
+const checkPass = async function(pwHash) {
+    console.log(this);
+    const hashPrefix = pwHash.slice(0, 5);
+    const hashSuffix = pwHash.slice(5);
 
     //pwnedpasswords returns API requests as a readable stream
-    fetch(`https://api.pwnedpasswords.com/range/${hashPrefix}`)
+    this._safe = await fetch(`https://api.pwnedpasswords.com/range/${hashPrefix}`)
         .then(response => {
             return response.body
         })
@@ -200,83 +190,39 @@ const checkPass = async function(pass) {
                     }
                     push();
                 }
-            })
+            });
         })
         .then(stream => {
             return new Response(stream, { headers: { "Content-Type": "text/html"}}).text();
         })
-        .then(async result => {
+        .then( result => {
             const re = /\r\n|\n|\r/gm;
             // result = result ? utf8Decoder.decode(result, { stream: true }) : '';
-            const resultArray = [result.split(re)]
+            const resultArray = [result.split(re)];
             
             console.log(resultArray);
 
-            const checkMatch = await cleanUpChunk(resultArray, hashSuffix);
-    
-            if(checkMatch) {
-                console.log('%cOh no, this password is vulnerable!', 'color: magenta');
-                this._safe = false;
+            return cleanUpChunk(resultArray, hashSuffix);
+        })
+        .then(check => {
+            console.log(check)
+            
+            if(check) {
+                console.log('%cOh no, this password is vulnerable!', 'color: orangered');
+                //? update pwObject safe variable
+                console.log(this);
+                let result = false;
+                return result;
             } else {
-                console.log('no matches...')
-                this._safe = true;
-
+                console.log('%cPassword is safe to use!', 'color: limegreen');
+                console.log(this);
+                //? update pwObject safe variable
+                let result = true;
+                return result;
             }
-            console.log(passStore);
-
 
         })
-
-
-
-    // let { value: chunk, done: readerDone } = await reader.read();
-
-    // console.log(chunk);
-
- 
-
-
-    // console.log(chunkArray);
-        
-    
-    // const checkMatch = await cleanUpChunk(chunkArray, hashSuffix);
-
-    
 }
-
-//! ===== previous code - works but doesnt return all chunks in the array to check for a match...
-// const checkPass = async function(pass) {
-//     const hashPrefix = pass.slice(0, 5);
-//     const hashSuffix = pass.slice(5);
-//     console.log('hashPrefix: ', hashPrefix);
-//     console.log('hashSuffix: ', hashSuffix);
-    
-//     const utf8Decoder = new TextDecoder('utf-8');
-
-//     let response =  await fetch(`https://api.pwnedpasswords.com/range/${hashPrefix}`)
-//     let reader = await response.body.getReader();
-//     let { value: chunk, done: readerDone } = await reader.read();
-//     chunk = chunk ? utf8Decoder.decode(chunk, { stream: true }) : '';
-
-//     console.log(chunk);
-
-//     const re = /\r\n|\n|\r/gm;
- 
-
-//     const chunkArray = [chunk.split(re)]
-
-//     console.log(chunkArray);
-        
-    
-//     const checkMatch = await cleanUpChunk(chunkArray, hashSuffix);
-
-//     if(checkMatch) {
-//         console.log('we have a match')
-//         } else {
-//         console.log('no matches...')
-//         }
-// }
-//!======================================================================================
 
 const cleanUpChunk = async function(chunkArray, hashSuffix) {
     const cleanArray = await chunkArray.flat()
@@ -285,6 +231,7 @@ const cleanUpChunk = async function(chunkArray, hashSuffix) {
             .join('')
             .toLowerCase())
     // console.log(cleanArray, hashSuffix)
-    const result = cleanArray.some(item => item === hashSuffix)
-    return result;
+    const response = cleanArray.some(item => item === hashSuffix)
+    // console.log(result);
+    return response;
 }

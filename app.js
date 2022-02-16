@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import appView from './src/views/appView.js';
@@ -11,10 +13,10 @@ if (process.env.NODE_ENV === 'development') {
 
 }
 
-const generatePW = function(pwLength, scCount, numCount) {
+const generatePW = function() {
     try {
-        console.log('creating password...', pwLength, scCount, numCount)
-        logic.draftStr(pwLength, scCount, numCount);
+        console.log('creating password...', appView._pwConditions)
+        logic.draftStr(appView._pwConditions);
         // console.log(logic.pwFinal);
         appView._printPassword(logic.passStore);
         appView._alert('New password created!', 'success');
@@ -27,28 +29,29 @@ const generatePW = function(pwLength, scCount, numCount) {
     }
 };
 
-const safePassValidation = function(pw) {
-    console.log('validating password...')
-    logic.vulnerabilityCheck(pw);
+const safePassValidation = async function(item) {
+    try {
+        console.log('validating password...', item)
+        await logic.vulnerabilityCheck(item);
+        console.log(logic.passStore);
+        appView._pwVulnerabilityStyling(item, logic.passStore);
+    } catch(err) {
+        console.log('unable to validate password', err);
+    }
 }
 
-//! previous alorithm=======================
-// const generatePW = function(pwLength, scCount, numCount) {
-//     try {
-//         console.log('creating password...', pwLength, scCount, numCount)
-//         logic.draftStr(pwLength, scCount, numCount);
-//         console.log(logic.pwFinal);
-//         appView._printPassword(logic.pwFinal);
-
-//     } catch(err) {
-//         console.error('something went wrong', err);
-//     }
-// };
-//!========================================
 
 const init = function() {
     appView.render();
     appView.addHandlerGenerate(generatePW, safePassValidation);
+
+
+    //az 97-122
+//AZ 65-90
+//sc 33-47, 91-96, 123-126 
+//nums 48-57
+
+
 
     if (module.hot) {
         module.hot.accept();
