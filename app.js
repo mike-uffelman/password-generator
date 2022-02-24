@@ -2,8 +2,8 @@
 
 
 
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
+import 'core-js/stable'; // for polyfilling
+import 'regenerator-runtime/runtime.js';
 import appView from './src/views/appView.js';
 import * as logic from './src/model.js';
 import appView from './src/views/appView.js';
@@ -13,45 +13,37 @@ if (process.env.NODE_ENV === 'development') {
 
 }
 
+// generate password and render controller
 const generatePW = function() {
     try {
-        console.log('creating password...', appView._pwConditions)
-        logic.draftStr(appView._pwConditions);
-        // console.log(logic.pwFinal);
+        logic.buildPw(appView._pwConditions);
         appView._printPassword(logic.passStore);
         appView._alert('New password created!', 'success');
         appView._removeAlert();
 
 
     } catch(err) {
-        console.error('something went wrong', err);
+        appView._alert('Password build error!', 'danger');
         appView._removeAlert();
     }
 };
 
+// password validation controller
 const safePassValidation = async function(item) {
     try {
-        console.log('validating password...', item)
-        await logic.vulnerabilityCheck(item);
-        console.log(logic.passStore);
+        await logic.pwVulnerabilityCheck(item);
         appView._pwVulnerabilityStyling(item, logic.passStore);
     } catch(err) {
-        console.log('unable to validate password', err);
+        appView._alert('Unable to validate password vulnerability!', 'danger');
+        appView._removeAlert();
     }
 }
 
 
+// load app controller and event handlers
 const init = function() {
     appView.render();
     appView.addHandlerGenerate(generatePW, safePassValidation);
-
-
-    //az 97-122
-//AZ 65-90
-//sc 33-47, 91-96, 123-126 
-//nums 48-57
-
-
 
     if (module.hot) {
         module.hot.accept();
