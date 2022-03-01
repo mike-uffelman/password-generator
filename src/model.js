@@ -173,27 +173,20 @@ export const pwVulnerabilityCheck = async function(item) {
 
 // create hash for password
 const hashPassword = function(pw) {
-    // console.log(pw);
-    // testHash();
+
+    console.log('pre-hashed pw: ', pw);
+    const readadablePW = pw.replaceAll('&amp;', '&')
+        .replaceAll('&lt;', '<')
+        .replaceAll('&gt;', '>')
+        .replaceAll('&quot;', '"')
+        .replaceAll('&#39;', "'")
+        .replaceAll('&#92;', '\\')
+    console.log(readadablePW);
+    testHash();
     return crypto.createHash('sha1')
-        .update(pw)
+        .update(readadablePW)
         .digest('hex');
 }
-
-// const testHash = function() {
-//     const hashChar = crypto.createHash('sha1')
-//         .update('@')
-//         .digest('hex');
-
-//     const hashNum = crypto.createHash('sha1')
-//         .update('&#64;')
-//         .digest('hex');
-
-//     console.log(hashChar);
-//     console.log(hashNum);
-//     console.log(hashChar === hashNum);
-// }
-
 
 const newReadableStream = function(reader) {
     return new ReadableStream({
