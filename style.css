@@ -162,8 +162,17 @@ body {
     transition: var(--transitions);
 }
 
+.btn-icons:hover {
+    fill: var(--primary);
+}
+
 .btn-icons * {
     opacity: 1;
+    
+}
+
+.btn-icons.copy {
+    margin: 1rem;
 }
 
 .btn-icons.unsafe {
@@ -180,12 +189,9 @@ body {
     fill: var(--primary);
 }
 
-.btn-icons.copy:hover {
-    fill: var(--primary);
-}
-
 .btn-icons svg{
     fill: var(--secondary);
+    pointer-events: none;
 }
 
 .btn-icons svg:hover {

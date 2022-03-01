@@ -20,13 +20,28 @@ class Password {
 export const buildPw = function (pwConditions) {
     try {
         const { pwLength, digits, lowerAz, upperAz, specialChars, scOptionChars} = pwConditions;
-        const scCode = scOptionChars?.map(sc => sc.charCodeAt());
-
         let pwDraftArray = [];
         const arr = new Uint8Array(1);
         const specCharList = [33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 58, 59, 60, 61, 62, 63, 64, 91, 92, 93, 94, 95, 96, 123, 124, 125, 126]
+        scOptionChars
 
+        console.log(scOptionChars)
 
+        // replace html safe characters with symbols
+        const scrubbedChars = scOptionChars?.toString()
+            .replaceAll('&amp;', '&')
+            .replaceAll('&lt;', '<')
+            .replaceAll('&gt;', '>')
+            .replaceAll('&quot;', '"')
+            .replaceAll('&#39;', "'")
+            .replaceAll('&#92;', '\\')
+
+            .split(',')
+            .map(sc => sc.charCodeAt());
+
+        console.log(scrubbedChars);
+
+        //-----------------------
         // while the generated pwlength is less than the desired pwLength continue looping
         while(pwDraftArray.length < pwLength) {
             // let a = new Uint8Array(1);
@@ -49,7 +64,7 @@ export const buildPw = function (pwConditions) {
                     const val = randValue;
                     
                     // use the user defined special characters if the scOptionsChars is defined
-                    if(scOptionChars) val.map(v => pwDraftArray.push(scCode[v % scCode.length]));
+                    if(scOptionChars) val.map(v => pwDraftArray.push(scrubbedChars[v % scrubbedChars.length]));
                     
                     // otherwise use the default characters from specCharList
                     if(scOptionChars === undefined) val.map(v => pwDraftArray.push(specCharList[v % 32]));
@@ -60,20 +75,23 @@ export const buildPw = function (pwConditions) {
                     break;
                 default:
                     break;
-    
             };
         };
         
+        console.log(pwDraftArray);
+
         //get character from code value
         const pwArray = pwDraftArray.map(pw => String.fromCharCode(pw));
 
         //validate password character requirements
         let pwPending = pwValidation(pwArray, pwConditions);
-        
+
+        //if failed validation (i.e. pending) - rebuild
         pwPending && buildPw(pwConditions);
+        //if passed validation (i.e. not pending) - shuffle and continue
         !pwPending && shufflePwArray(pwArray);
-        
-    
+
+         
     } catch(err) {
         console.log('oh no something went wrong', err);
         throw new Error('An error has occured...', err);
@@ -100,9 +118,15 @@ const shufflePwArray = function(arr) {
             arr[randIndex] = tempValue;
         }
         
-        // create new Password object and push to passStore
-        const newPw = new Password(arr.join(''));
+        // create new Password object and push to passStore, prior to storing we convert vulnerable characters back to html number codes
+        const newPw = new Password(arr.join('').replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;')
+        .replaceAll('\\', '&#92;'));
         passStore.push(newPw);
+        console.log(passStore);
 
     } catch(err) {
         console.log('unable to shuffle password', err);
@@ -119,21 +143,13 @@ const pwValidation = function(pwArray, pwConditions) {
     const lower = '(?=.*[a-z]){1,}';
     const upper = '(?=.*[A-Z]){1,}';
     const specChars = '(?=.*[!"#$%&\')(*+,-./:;<=>?@[\\]^_`{|}~]){1,}';
-    let pending;
   
     const re =  new RegExp(`${ digits ? digits09 : ''}${lowerAz ? lower : ''}${upperAz ? upper : ''}${specialChars ? specChars : ''}.{${pwLength},}`);
 
     //using test() to return boolean, match() returns the index value that matches
-    if(!re.test(pwArray.join(''))) {
-        // console.log('%cPassword failed validation', 'color: red');
-        pending = true;
-        return pending;
+    if(!re.test(pwArray.join(''))) return true;
     
-    } else {
-        // console.log('%cPassword passed validation', 'color: green');
-        pending = false;
-        return pending;
-    };
+    return false;
 
 };
 
@@ -142,6 +158,7 @@ const pwValidation = function(pwArray, pwConditions) {
 export const pwVulnerabilityCheck = async function(item) {
     try{
         const pwEl = passStore.find(({_id}) => _id === Number(item));
+        console.log(pwEl, pwEl.pw)
         pwEl.pwHash = hashPassword.call(pwEl, pwEl.pw);
         await comparePwVulnerability.call(pwEl, pwEl.pwHash);
     
@@ -157,10 +174,26 @@ export const pwVulnerabilityCheck = async function(item) {
 // create hash for password
 const hashPassword = function(pw) {
     // console.log(pw);
+    // testHash();
     return crypto.createHash('sha1')
         .update(pw)
         .digest('hex');
 }
+
+// const testHash = function() {
+//     const hashChar = crypto.createHash('sha1')
+//         .update('@')
+//         .digest('hex');
+
+//     const hashNum = crypto.createHash('sha1')
+//         .update('&#64;')
+//         .digest('hex');
+
+//     console.log(hashChar);
+//     console.log(hashNum);
+//     console.log(hashChar === hashNum);
+// }
+
 
 const newReadableStream = function(reader) {
     return new ReadableStream({

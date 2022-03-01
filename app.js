@@ -16,14 +16,13 @@ if (process.env.NODE_ENV === 'development') {
 // generate password and render controller
 const generatePW = function() {
     try {
+        console.log(appView._pwConditions);
         logic.buildPw(appView._pwConditions);
         appView._printPassword(logic.passStore);
         appView._alert('New password created!', 'success');
         appView._removeAlert();
-
-
     } catch(err) {
-        appView._alert('Password build error!', 'danger');
+        appView._alert(err.message, 'danger');
         appView._removeAlert();
     }
 };
@@ -34,7 +33,7 @@ const safePassValidation = async function(item) {
         await logic.pwVulnerabilityCheck(item);
         appView._pwVulnerabilityStyling(item, logic.passStore);
     } catch(err) {
-        appView._alert('Unable to validate password vulnerability!', 'danger');
+        appView._alert(err.message, 'danger');
         appView._removeAlert();
     }
 }
