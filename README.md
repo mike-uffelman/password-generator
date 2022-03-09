@@ -36,6 +36,7 @@
     </li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#going-forward">Going Forward</a></li>
     <li><a href="#considerations">Considerations</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -131,9 +132,21 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Going Forward
+
+Additional features may include:
+
+- Expand the character base to extended ASCII
+- Allow user enter a password and check against the Pwned Passwords API
+- Dark mode
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Considerations
 
 \*Should not be considered secure...
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
 

@@ -21,26 +21,62 @@
     --orange:  #fd7e14;
     --yellow:  #ffc107;
     --green:   #198754;
+    --green-light: rgba(25, 135, 84, 0.25);
     --teal:    #20c997;
     --cyan:    #0dcaf0;
 
     --primary:       var(--blue);
     --secondary:     #6c757d;
     --success:       var(--green);
+    --success-light: var(--green-light);
     --info:          var(--cyan);
     --warning:       var(--yellow);
     --danger:        var(--red);
     --light:         #f8f9fa;
     --dark:          #212529;
+    --gray-100:      #f8f9fa;
 }
 
-html {
-    /* font-size: 90%; */
-}
+
 
 body {
     font-family: 'Cairo', sans-serif;
 
+
+}
+
+.app {
+    max-height: 100vh;
+}
+
+.message-container {
+    position: relative;
+    min-height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    /* flex: 1 1; */
+    /* flex-direction: column; */
+    overflow: scroll;
+}
+
+.message-container::-webkit-scrollbar {
+    display: none;
+    z-index: 1;
+}
+
+form {
+    flex: 0 0;
+}
+
+
+
+.char-type__error {
+    background-color: var(--warning);
+    opacity: .5;
 }
 
 .section-header {
@@ -51,6 +87,33 @@ body {
     align-items: center;
 }
 
+
+
+.pw__container::-webkit-scrollbar {
+    display: none;
+}
+
+.pw__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    overflow: scroll;
+    opacity: 0;
+    padding: 1rem;
+    transition: var(--transitions);
+}
+
+.pw__box::-webkit-scrollbar {
+    display: none;
+}
+
+
+.pw__box--header {
+    height: auto;
+    /* position: absolute; */
+}
+
 .pw__container {
     overflow: hidden;
     overflow: -moz-scrollbars-none;
@@ -58,28 +121,32 @@ body {
     -ms-overflow-style: none;
 }
 
-.pw__container::-webkit-scrollbar {
-    display: none;
-}
-
-.pw__box {
-    opacity: 0;
-    transition: var(--transitions);
-}
-
 .pw__item {
+    height: 100%;
+    width: 100%;
     position: relative;
     word-wrap: break-word;
     word-break: break-word;
     /* height: auto; */
-    padding: 0 1rem;
+    padding: 0 .5rem 0 1rem;
     /* padding: 2rem; */
+    /* background: linear-gradient(to right, var(--green-light), var(--secondary)); */
+
+}
+
+.list-group-item {
+    /* background-color: var(--light); */
+
 }
 
 .pw__item:hover .icon-desc {
     opacity: 1;
     transition: var(--transitions);
 }
+
+/* .pw__item:not(:first-of-type) {
+    margin-top: 1rem;
+} */
 
 .btn:hover > p {
     color: var(--primary);
@@ -97,92 +164,101 @@ body {
     /* opacity: .5; */
     transition: all ease 700ms;
     /* font-weight: 600; */
+    
 
 }
 
 .btn[aria-expanded='true'] > .options__icon {
-    transform: rotateX(180deg);
-    transform-origin: center;
-    transition: all ease 700ms;
+    
+    /* transition: all ease 700ms; */
 }
 
 .btn[aria-expanded='true'] > .options__icon svg {
+    transform: rotateX(180deg);
+    transform-origin: center;
     fill: var(--primary);
-    transition: var(--transitions);
+    transition: all ease 700ms;
 }
 
+.btn[aria-expanded='false'] > .options__icon svg {
+    transform: rotateX(0);
+    transform-origin: center;
+    fill: var(--primary);
+    transition: all ease 700ms;
+}
  
 .btn[aria-expanded='false'] > .options__icon {
     transform-origin: center;
     transition: var(--transitions);
 }
-/* .options__icon.expand{
-    background-image: url('./images/expand_more.svg');
-    background-position: right;
-    background-repeat: no-repeat;
-    margin-left: auto;
-
-} */
-
-/* .options__icon.close{
-    background-image: url('./images/expand_less.svg');
-    background-position: right;
-    background-repeat: no-repeat;
-    margin-left: auto;
-    transition: var(--transitions);
-
-} */
 
 .alert {
-    position: relative;
-    
+    position: absolute;
+    z-index: 10;
     width: 100%;
-    height: 2rem;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    /* flex: 0 0; */
+    /* justify-content: space-between; */
     align-items: center;
-    opacity: 0;
-    transition: opacity ease-in-out 350ms;
+    /* opacity: 0; */
+    /* transition: all ease 1000ms; */
+    margin: 0;
+    padding: 1rem;
 }
 
-.new-pass-color {
-    color: var(--newPassColor);
-    transition: color ease 350ms;
+.alert > .btn-close {
+    margin-left: auto;
 }
+
+
+
+.new-pass-color {
+    background-image: linear-gradient(to right, var(--success-light), var(--success-light),  var(--success-light), var(--success-light), var(--light), var(--light), var(--light), var(--light));
+    background-size: 200% 200%;
+    /* color: var(--primary); */
+    /* transition: color ease 350ms; */
+    animation-name: newpass;
+    /* animation-delay: 1000ms; */
+    animation-duration: 150ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+.bg-fade {
+    background-image: linear-gradient(to right, transparent, transparent, transparent, transparent, var(--success-light),  var(--success-light), var(--success-light));
+    background-size: 200% 200%;
+    /* color: var(--primary); */
+    /* transition: color ease 350ms; */
+    animation-name: newpassfade;
+    animation-duration: 150ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+
 
 
 /* ===== Password List item icons ===== */
-.btn-icons {
+.btn.btn-icons {
     padding: 0;
-    opacity : .5;
+    opacity : .75;
     transition: var(--transitions);
 }
 
-.btn-icons:hover {
-    fill: var(--primary);
-}
-
-.btn-icons * {
-    opacity: 1;
-    
-}
-
-.btn-icons.copy {
-    margin: 1rem;
-}
-
-.btn-icons.unsafe {
+.btn-icons > .unsafe {
     fill: var(--danger);
     transform: scale(1.1);
 }
 
-.btn-icons.safe {
+.btn-icons > .safe {
     fill: var(--success);
 }
 
-
-.btn-icons.info {
+.btn-icons > .sc-info {
     fill: var(--primary);
+    max-height: 1.25rem;
+    max-width: 1.25rem;
 }
 
 .btn-icons svg{
@@ -190,25 +266,29 @@ body {
     pointer-events: none;
 }
 
-.btn-icons svg:hover {
-    fill: var(--primary);
-    transition: var(--transitions);
-}
-
-.btn-icons svg:active {
-    fill: magenta;
-    transition: var(--transitions);
-}
 /* ===== ===== ===== ===== ===== ===== */
 
+.btn[data-bs-target='#collapseOptions'] {
+    height: 24px;
+}
 
-.tool-tip {
-    /* padding: 1rem; */
+.btn.btn-icons.tool-tip {
+    opacity: .75;
+    padding: 0;
+}
+
+.bg-green-light {
+    background-color: var(--green-light);
+
 }
 
 
-/* @media (max-width: 30rem) {
-    .form-check-label {
-        font-size: .75rem;
-    }
-} */
+@keyframes newpass {
+    0% {background-position: 100% 100%;}
+    100% {background-position: 0 0;}
+}
+
+@keyframes newpassfade {
+    0% {background-position: 100% 100%;}
+    100% {background-position: 0 0;}
+}
