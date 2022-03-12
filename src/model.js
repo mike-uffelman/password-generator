@@ -68,8 +68,6 @@ export const buildPw = function (pwConditions) {
             };
         };
         
-        console.log(pwDraftArray);
-
         //get character from code value
         const pwArray = pwDraftArray.map(pw => String.fromCharCode(pw));
 
@@ -83,7 +81,6 @@ export const buildPw = function (pwConditions) {
         //if passed validation (i.e. not pending) - shuffle and continue
         if(!pwPending) {
             const shuffled = shufflePwArray(pwArray);
-            console.log(shuffled);
             addToStore(shuffled);
         }
     } catch(err) {
@@ -112,20 +109,19 @@ const shufflePwArray = function(arr) {
         while(0 !== currentIndex) {
             randIndex = Math.floor(Math.random() * currentIndex);
             currentIndex -= 1;
-            
+
             tempValue = arr[currentIndex];
             arr[currentIndex] = arr[randIndex];
             arr[randIndex] = tempValue;
         }
-        //return shuffled array        
+        //return shuffled array      
         return arr;
     } catch(err) {
-        // console.log('unable to shuffle password', err);
+        console.log('unable to shuffle password', err);
         throw new Error('Failed to shuffle password', err);
     };
     
 };
-
 
 // password validation function - using RegEx, checking to ensure that the generated password contains at least on of the specificed character types, returns boolean pending
 const pwValidation = function(pwArray, pwConditions) {
