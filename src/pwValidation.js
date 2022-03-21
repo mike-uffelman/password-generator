@@ -12,8 +12,10 @@ export const pwVulnerabilityCheck = async function(item, passStore) {
         
         const normalizedPw = helper.htmlEntityRefToChar(pwEl.pw);
 
-
+        // .call() hashPassword on the this pwEl for normalizedPw
         pwEl.pwHash = hashPassword.call(pwEl, normalizedPw);
+        
+        // .call() comparePwVuln. on this pwEl for pwEl.pwHash
         await comparePwVulnerability.call(pwEl, pwEl.pwHash);
         
         if(pwEl._safe) return true;

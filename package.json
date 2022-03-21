@@ -2,7 +2,7 @@
   "name": "passwordgenerator",
   "version": "1.0.0",
   "description": "generate complex and safe passwords",
-  "main": "passw.js",
+  "main": "app.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"

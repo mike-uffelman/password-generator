@@ -24,9 +24,18 @@
   </p>
 </div>
 
+## TL;DR 🤷‍♂️
+
+This is a password generator built with vanilla JavaScript and Bootstrap. Features include the ability to select the password length and major character types. In addition, you can copy to the clipboard and check the vulnerability of the generated password against the Pwned Passwords API. Demo the app here.
+
+<br>
+
 <!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Password Generator</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -42,40 +51,17 @@
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
-
+<br>
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]('./images/readme-main.png')
+This password generator is designed to output complex and safe passwords to meet common password requirements. The generator allows for passwords of up to 64 characters and a combination of character types including the lowercase and uppercase alphabet (A to Z), special characters (ASCII up to #126) or user defined special characters, and numbers (0 - 9).
 
-This password generator is designed to output complex and safe passwords to meet common password requirements. The generator allows for passwords of up to 64 characters and a combination of many character types including the lowercase and uppercase alphabet (A to Z), special characters (ASCII up to #126) or user defined special characters, and numbers (0 - 9).
-
-Additional features include the ability to copy passwords to the browser clipboard on click and check the generated passwords' vulnerability (i.e. if it has been compromised in a data breach) against the pwnedpasswords API database.
-
-<hr>
-During execution of generating the password the app will:
-
-- ensure at least one (1) character of each required type will be in the password
-
-Upon output the app will print the password to the 'Generated Passwords' list where the user can view the generated password.
-
-Once the generated password is available the user will be able to copy the password to the browser clipboard for ease of use elsewhere.
-
-Most importantly, the user will be able to click the shield search icon which will hash the password and compare the hash to a list of compromised passwords via the pwnedpassword API.
-
-This is a password generator app. The project started with simplier functionality such as password length and choosing the number of special characters and digits (if any) the user required. Over time the scope and functionality expanded to includes more features
-
-The features included in the app include:
-
-- User selection of the password length (2-64 characters), lowercase A-Z, uppercase A-Z, Special Characters or specific user defined Special Characters, and numbers (0-9)
-- Upon selection of the password parameters, the app will generate the password and check to ensure at least one character for each specified character type is included in the returned password.
-- Once displayed in the 'Generated Passwords' list, the user may click the icon with the shield and search to verify the password has not been compromised in any data breaches (as tracked by the pwnedpassword API).
-- The user may also copy the password to the browser clipboard by clicking the copy icon.
-
-Pw length, lowercase, uppercase, special characters, specific special characters, and numbers.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+Additional features include the ability to copy passwords to the browser clipboard and check the generated passwords' vulnerability (i.e. if it has been compromised in a data breach) against the pwnedpasswords API database.
+<br><br>
+[![Product Name Screen Shot][product-screenshot]]('./images//readMeImgs/readme-main.png')
+<br>
 
 ### Built With
 
@@ -93,29 +79,57 @@ Open the [live demo here](link).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Background & Discussion
+
+When the project initially started, the project scope was limited to creating a simple password generator that allowed the user to select a password length, special characters, and numbers. After leaving it as is for several months I returned to the project to re-evaluate and decided to update several aspects and add new features. The revisions included an updated password generating alorithm and additional features that improve the quality of life for the user, such as copy to clipboard and check password vulnerability lookup.
+
+In the design and revist to the project, I intentionally have not used any JavaScript frameworks, this was to ensure I could practice and implement the fundamentals as well as problem solve on my own.
+
+There were many new and welcomed challenges which arose while developing this project, some of which include readable streams (having only worked with well defined JSON prior), regular expression pattern matching for input validation and sanitization, architecture redesign
+
+## Architecture & Design
+
+- Architecture
+  - The application is built with a Model View Controller (MVC) pattern and utilizes an object-oriented programming (OOP) approach to organize and manage object instances.
+    <br><br>
+- Password Algorithm & Validation
+  - Using a while...switch algorithm takes a random number from crypto.getRandomValues() (Crypto Web API) to select the character type (az, AZ, 09, SC) at each password index based on desired password length, then another random value to assign as the character value of the index from the ASCII decimal value corresponding the range of the character type.
+  - From the ASCII decimal values the indexes are converted to Latin characters.
+  - Uses regular expression pattern matching to ensure the generated password contains at lease one of each character type the user has chosen, if not it will try again.
+    <br><br>
+- Form & Data Validation
+
+  - The form validation (client side) includes the following:
+    - User must select at least one (1) character type
+    - The password length must be greater than or equal to the number of character types selected, i.e. if a-z, A-Z, and special characters are checked, the password length must be greater than or equal to three (3).
+    - using regular expressions, the user input may only contain special characters, and of which the HTML vulnerable characters (&lt; &gt; &amp; &quot; &apos; &bsol;) are converted to HTML entity codes to sanitize the inputs
+    - Regular expression also used pattern to ensure desired characters are in the generated password
+
+- The user interface was designed to ensure the application is easy to use and intuitive for the user.
+<hr>
+
 <!-- USAGE EXAMPLES -->
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This is the basic usage of the application:
 
-The basic usage process is as follows:
-
-1.  User shall populate the form to the desired password conditions
+1.  User populates the form to the desired password conditions and clicks 'Generate' to submit the form.
     <br>
-    [![Password Generator form screenshot][form-screenshot]]('./images/form.png')
+    [![Password Generator form screenshot][form-screenshot]]('./images/readMeImgs/form.png')
 
 2.  Upon output of the generated password the user may:
-    [![Password Generator ouput screenshot][item-screenshot]]('./images/pwItem.png')
+    [![Password Generator ouput screenshot][item-screenshot]]('./images/readMeImgs/pwItem.png')
 
-        - click the icon with a shield and search glass which will compare the generated password to the pwnedpassword API database of compromised password
-        - click the copy icon to copy the password to the browsers clipboard for ease of use elsewhere
+    - click the icon with a shield search icon [![shield-search]]('./images/password-check.svg') which will compare the generated password to the pwnedpassword API database of compromised password
+    - click the copy icon [![copy-icon]]('./images/copy2.svg') to copy the password to the browsers clipboard for ease of use elsewhere
 
     <br>
     <br>
-    [![Password Generator icons screenshot][icons-screenshot]]('./images/icons.png')
 
-<br>
+    [![Validated Passwords][checked-passwords]('./images/password-validation.png']
+
+3.  Other actions includes a help/instructions button i and the ability to clear the current list of generated passwords with 'Clear'.
 
 Expanded user defined special characters
 
@@ -142,9 +156,9 @@ Additional features may include:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Considerations
+## Considerations & Disclosure
 
-\*Should not be considered secure...
+This is a project
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -172,11 +186,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [license-url]: https://github.com/mike-uffelman/password-generator/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-profile-blue
 [linkedin-url]: https://www.linkedin.com/in/michael-uffelman-34289521/
-[product-screenshot]: images/readme-main.png
-[form-screenshot]: images/form.png
-[item-screenshot]: images/pwItem.png
-[icons-screenshot]: images/icons.png
+[product-screenshot]: images/readMeImgs/main.png
+[form-screenshot]: images/readMeImgs/form-inputs.png
+[item-screenshot]: images/readMeImgs/password-output.png
+[icons-screenshot]: images/readMeImgs/icons.png
 [github-url]: https://github.com/mike-uffelman
 [github-shield]: https://img.shields.io/badge/GitHub-profle-orange
 [project-shield]: https://img.shields.io/badge/GitHub-repo-gray?color=#6cc644
 [project-repo]: https://github.com/mike-uffelman/password-generator
+[shield-search]: images/check_password.svg
+[copy-icon]: images/copy2.svg
+[checked-passwords]: ./images/password-validation.png

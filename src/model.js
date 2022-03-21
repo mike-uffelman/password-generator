@@ -6,9 +6,8 @@ export let passStore = []; //storage array for generated passwords
 
 // objet for each generated password
 class Password {
-    _safe;
+    testparam = 'this is a test param';
     _id = Date.now();
-    pwHash;
     constructor(pw) {
         this.pw = pw;
     };

@@ -19,7 +19,9 @@ const generatePW = function() {
         // console.log(appView._pwConditions);
         logic.buildPw(appView._pwConditions);
         appView._printPassword(logic.passStore);
+        console.log(logic.passStore);
     } catch(err) {
+        console.error(err);
         appView._alert(err.message, 'danger');
         // appView._removeAlert();
     }
@@ -28,11 +30,15 @@ const generatePW = function() {
 // password validation controller
 const safePassValidation = async function(item) {
     try {
+
+
         appView._clearAlerts();
         // console.log('pwValidation controller item: ', item);
-        await pwValidation.pwVulnerabilityCheck(item, logic.passStore);
-        appView._pwVulnerabilityStyling(item, logic.passStore);
+        appView._pendingValidation(); // pending spinner animation
+        await pwValidation.pwVulnerabilityCheck(item, logic.passStore); //check password vulnerability in API
+        appView._pwVulnerabilityStyling(item, logic.passStore); // vulnerability outcome UI stylng 
     } catch(err) {
+
         appView._alert(err.message, 'danger');
     }
 }
@@ -40,12 +46,18 @@ const safePassValidation = async function(item) {
 
 // load app controller and event handlers
 const init = function() {
-    appView.render();
-    appView.addHandlerGenerate(generatePW, safePassValidation);
+    try {
+        appView.render();
+        appView.addHandlerGenerate(generatePW, safePassValidation);
 
-    if (module.hot) {
-        module.hot.accept();
+        if(module.hot) module.hot.accept();
+
+    } catch(err) {
+        console.error(err.name, err.message);
     }
+    
+
+    
 
 }
 
