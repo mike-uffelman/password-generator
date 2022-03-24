@@ -1,71 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&display=swap');
+@import 'animations.css';
+@import 'colors.css';
 
+
+/* ======= Base stylings and resets ======= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    
 }
-
-:root {
-    --transitions-1: all ease 300ms;
-    --transitions-2: all ease 700ms;
-
-    --blue:    #0d6efd;
-    --indigo:  #6610f2;
-    --purple:  #6f42c1;
-    --pink:    #d63384;
-    --red:     #dc3545;
-    --orange:  #fd7e14;
-    --yellow:  #ffc107;
-    --green:   #198754;
-    --green-light: rgba(25, 135, 84, 0.25);
-    --teal:    #20c997;
-    --cyan:    #0dcaf0;
-
-    --primary:       var(--blue);
-    --secondary:     #6c757d;
-    --success:       var(--green);
-    --success-light: var(--green-light);
-    --info:          var(--cyan);
-    --warning:       var(--yellow);
-    --danger:        var(--red);
-    --light:         #f8f9fa;
-    --dark:          #212529;
-    --gray-100:      #f8f9fa;
-    --alert-blue:    #cfe2ff;
-    --alert-green:   #d1e7dd;
-    --alert-red:     #f8d7da;
-    --alert-info:      #cff4fc;
-}
-
-
 
 body {
     font-family: 'Cairo', sans-serif;
     min-height: calc(100vh - .2rem);
 }
 
+
 .app {
     /* height: 100%; */
     min-width: 280px;
     flex: 0;
 }
+/* ============================================= */
 
+/* ======= Header & Alert Container ========= */
 .app__header {
     position: relative;
-}
-
-.app__header--help {
-    /* position: absolute; */
-    /* top: 0; */
-    /* right: 0; */
-    /* opacity: .5; */
-    /* display: block; */
-    /* fill: var(--blue); */
-    /* height: auto; */
-    /* width: 1.5rem; */
 }
 
 .app-help--icon {
@@ -73,10 +34,8 @@ body {
 }
 
 .message-container {
-    /* position: relative; */
     height: 4rem;
     overflow: scroll;
-    
     transition: var(--transitions-2);
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -85,10 +44,25 @@ body {
 
 .message-container::-webkit-scrollbar {
     display: none;
-    
 }
 
+/* ============================================== */
 
+/* ==============FOOTER================== */
+.footer {
+    z-index: 100;
+    font-size: .75rem;
+    flex: 0;
+    margin-top: auto;
+    margin-bottom: .2rem;
+}
+
+.footer a {
+    text-decoration: none;
+}
+/* ========================================== */
+
+/* ========= HELP/INSTRUCTIONS ================= */
 .instructions {
     display: none;
     opacity: 0;
@@ -102,13 +76,6 @@ body {
     margin-top: 4rem;
     background-blend-mode: blur(5px);
     max-width: 30rem;
-    flex-direction: column;
-    justify-self: center;
-    align-self: center;
-}
-
-.instructions__heading {
-
 }
 
 .instructions__text {
@@ -121,48 +88,29 @@ body {
 
 .instructions.instructions--fade {
     display: flex;
-    
 }
 
 .instructions.instructions--show {
     opacity: 1;
     transition: all ease 5000;
-
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate( -50%, -50%); */
-
 }
 
 .instructions__list--item {
     background-color: var(--light);
-
-    /* border: none; */
 }
 
 .instructions__list--item:not(:last-of-type) {
     margin-bottom: .25rem;
 }
 
-.flicker-safe {
-    background-color: var(--alert-green);
-    transition: var(--transitions-2);
+.instructions__heading {
+    color: var(--primary);
+    margin-bottom: .25rem;
 }
 
-.flicker-vulnerable {
-    background-color: var(--alert-red);
-    transition: var(--transitions-2);
-}
+/* ====================================================== */
 
-.flicker-info {
-    background-color: var(--alert-info);
-    transition: var(--transitions-2);
-}
-
-.pw__container::-webkit-scrollbar {
-    display: none;
-}
-
+/* ============PW item container================ */
 .pw__box {
     position: relative;
     opacity: 0;
@@ -179,6 +127,7 @@ body {
     /* position: absolute; */
 }
 
+/* === PW item list ul container === */
 .pw__container {
     flex: 1 1 auto;
     overflow: hidden;
@@ -187,6 +136,12 @@ body {
     -ms-overflow-style: none;
 }
 
+.pw__container::-webkit-scrollbar {
+    display: none;
+}
+/* ================================= */
+
+/* === PW list items === */
 .pw__item {
     position: relative;
     word-wrap: break-word;
@@ -194,66 +149,13 @@ body {
     padding: 0 .5rem 0 1rem;
     transition: var(--transitions-2);
 }
+/* ===================== */
 
-.instructions__heading {
-    color: var(--primary);
-    margin-bottom: .25rem;
-}
-
-.pw__item:hover .icon-desc {
-    opacity: 1;
-    transition: var(--transitions-1);
-}
-
-.options__label:hover {
-    color: var(--primary);
-    transition: var(--transitions-1);
-    text-shadow: 0 0 .5px var(--primary);
-}
-
-.btn[aria-expanded='false'] > p {
-    transition: var(--transitions-2);
-}
-
-.btn[aria-expanded='true'] > p {
-    color: var(--primary);
-    text-shadow: 0 0 .5px var(--primary);
-
-    transition: var(--transitions-2);
-    
-
-}
-
-.btn[aria-expanded='true'] > .options__icon {
-    
-    /* transition: var(--transitions-2); */
-}
-
-.btn[aria-expanded='true'] > .options__icon svg {
-    transform: rotateX(180deg);
-    transform-origin: center;
-    fill: var(--primary);
-    transition: var(--transitions-2);
-}
-
-.btn[aria-expanded='false'] > .options__icon svg {
-    transform: rotateX(0);
-    transform-origin: center;
-    fill: var(--primary);
-    transition: var(--transitions-2);
-}
- 
+/* ========ALERT STYLINGS ==================== */
 .alert {
-    /* position: relative; */
-    min-height: 100%;
-    /* width: 100%; */
     z-index: 10;
     flex: 0;
-}
-
-.alert > .btn-close {
-    /* margin: auto; */
-    
+    min-height: 100%;
 }
 
 .alert > p {
@@ -263,8 +165,9 @@ body {
 .alert-link {
     text-decoration: none;
 }
+/* ================================================ */
 
-/* new password styling classes */
+/* ==================new password styling classes========= */
 .new-pass-color {
     background-image: linear-gradient(to right, var(--alert-green), var(--alert-green),  var(--alert-green), var(--alert-green), var(--light), var(--light), var(--light), var(--light));
     background-size: 200% 200%;
@@ -287,27 +190,64 @@ body {
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
 }
-/* ================================== */
+/* ====================================================== */
 
 
 
-/* ===== Password List item icons ===== */
-.btn.btn-icons {
+/* ================= Buttons =========================== */
+
+/* Special Character Options Label */
+.options__label:hover {
+    color: var(--primary);
+    transition: var(--transitions-1);
+    text-shadow: 0 0 .5px var(--primary);
+}
+
+
+.btn[aria-expanded='false'] > .options__label {
+    transition: var(--transitions-2);
+}
+
+.btn[aria-expanded='true'] > .options__label {
+    color: var(--primary);
+    text-shadow: 0 0 .5px var(--primary);
+    transition: var(--transitions-2);
+}
+/* --------------- */
+
+/* Special Characters Options Icon */
+.btn[aria-expanded='true'] > .options__icon svg {
+    transform: rotateX(180deg);
+    transform-origin: center;
+    fill: var(--primary);
+    transition: var(--transitions-2);
+}
+
+.btn[aria-expanded='false'] > .options__icon svg {
+    transform: rotateX(0);
+    transform-origin: center;
+    fill: var(--primary);
+    transition: var(--transitions-2);
+}
+/* ---------------- */
+
+/* Icon Buttons */
+.btn-icons {
     padding: 0;
     opacity : .75;
     transition: var(--transitions-1);
 }
 
-.btn-icons > .unsafe {
+.btn-icons > .unsafe-pw-icon {
     fill: var(--danger);
     transform: scale(1.1);
 }
 
-.btn-icons > .safe {
+.btn-icons > .safe-pw-icon {
     fill: var(--success);
 }
 
-.btn-icons > .sc-info {
+.btn-icons > .sc-info-icon {
     fill: var(--primary);
     max-height: 1.25rem;
     max-width: 1.25rem;
@@ -318,14 +258,16 @@ body {
     pointer-events: none;
 }
 
-/* ===== ===== ===== ===== ===== ===== */
-
 .btn[data-bs-target='#collapseOptions'] {
     height: 24px;
 }
 
 .sc-container__labels {
     position: relative;
+}
+
+.sc-container__labels > .btn.btn-icons.tool-tip {
+    border: none;
 }
 
 .btn.btn-icons.tool-tip > .tool-tip__div {
@@ -339,11 +281,26 @@ body {
     opacity: 1;
 }
 
-.bg-green-light {
-    background-color: var(--green-light);
+/* ======================================================= */
 
+/* ================= PW ITEM COLOR FLICKERS ================ */
+.flicker-safe {
+    background-color: var(--alert-green);
+    transition: var(--transitions-2);
 }
 
+.flicker-vulnerable {
+    background-color: var(--alert-red);
+    transition: var(--transitions-2);
+}
+
+.flicker-info {
+    background-color: var(--alert-info);
+    transition: var(--transitions-2);
+}
+/* ========================================================= */
+
+/* ===============PENDING VALIDATION SPINNER ================ */
 .pending__dots {
     position: relative;
 }
@@ -386,49 +343,9 @@ body {
     animation-delay: 1s;
 
 }
+/* ======================================================= */
 
-.footer {
-    z-index: 100;
-    font-size: .75rem;
-    flex: 0;
-    margin-top: auto;
-    margin-bottom: .2rem;
-}
-
-.footer a {
-    text-decoration: none;
-
-}
-
-
-/* ===== animations ===== */
-@keyframes newpass {
-    0% {background-position: 100% 100%;}
-    100% {background-position: 0 0;}
-}
-
-@keyframes newpassfade {
-    0% {background-position: 100% 100%;}
-    100% {background-position: 0 0;}
-}
-
-@keyframes pending {
-    0% {
-        background-color: var(--primary);
-    }
-    50%, 
-    100% {
-        background-color: var(--alert-blue);
-    }
-
-}
-
-/* ======================= */
-
-
-
-
-
+/* ===============MEDIA QUERIES =============== */
 @media only screen and (max-width: 400px) {
     .heading {
         font-size: 1rem;
@@ -446,6 +363,22 @@ body {
     .instructions__list--item {
         padding: .5rem;
     }
+
+    .pending__dots--item,
+    .pending__dots--item::before,
+    .pending__dots--item::after {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+    }
+
+    .pending__dots--item::before {
+        left: -1.5rem;
+    }
+    
+    .pending__dots--item::after {
+        left: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -454,3 +387,4 @@ body {
         font-weight: 500;
     }
 }
+/* =============================================== */

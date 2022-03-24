@@ -1,0 +1,23 @@
+
+
+
+@keyframes newpass {
+    0% {background-position: 100% 100%;}
+    100% {background-position: 0 0;}
+}
+
+@keyframes newpassfade {
+    0% {background-position: 100% 100%;}
+    100% {background-position: 0 0;}
+}
+
+@keyframes pending {
+    0% {
+        background-color: var(--primary);
+    }
+    50%, 
+    100% {
+        background-color: var(--alert-blue);
+    }
+
+}

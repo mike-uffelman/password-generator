@@ -6,7 +6,6 @@ export let passStore = []; //storage array for generated passwords
 
 // objet for each generated password
 class Password {
-    testparam = 'this is a test param';
     _id = Date.now();
     constructor(pw) {
         this.pw = pw;

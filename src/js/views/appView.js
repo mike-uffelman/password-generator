@@ -52,7 +52,7 @@ class appView {
                 let count = 0;
                 Object.values(this._pwConditions).forEach(obj => obj === true ? count++ : '')
                 
-                if(this._pwConditions.pwLength < count) throw new Error('Please set password length, must be equal to number of types selected');
+                if(this._pwConditions.pwLength < count) throw new Error('Please set password length, must be greater than or equal to number of types selected');
 
                 handler();
             } catch(err) {
@@ -133,7 +133,7 @@ class appView {
                         <div class='sc-container__labels'>
                             <label class='form-check-label char-type align-self-center ' for='specCharCheckbox'>Special Characters</label>
                             <button type="button" class="btn btn-icons tool-tip" data-toggle="tooltip" data-placements='top' title="&#33&#34&#35&#36&#37&#38&#39&#40&#41&#42&#43&#44&#45&#46&#47&#58&#59&#60&#61&#62&#63&#64&#91&#92&#93&#94&#95&#96&#123&#124&#125&#126">
-                                <svg class='sc-info d-block' xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 36 36" width="36px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path class='' d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                                <svg class='sc-info-icon d-block' xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 36 36" width="36px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path class='' d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                             </button>
                             <input type='checkbox' id='specCharCheckbox' class='form-check-input' value='false'> 
                         </div>
@@ -149,7 +149,7 @@ class appView {
                         <div class='form-check'>
                             <input type='checkbox' id='sc-options' class='form-check-input'  value='false'>    
                             <label class='form-text-label form-check-label char-type align-self-center' for='sc-options'>Only: </label>
-                            <input type='text' id='other-chars' class='form-control form-control-sm border border-primary mt-1'  value='' placeholder='Specify characters to include (no spaces or delimiters)'>
+                            <input type='text' id='other-chars' class='form-control form-control-sm border border-primary mt-1'  value='' disabled placeholder='Specify characters to include (no spaces or delimiters required)'>
                         </div>
                     </div>
                     <div class='form-check '>
@@ -166,7 +166,7 @@ class appView {
                 </div>
                 <ul class='pw__container container list-group list-group-flush overflow-scroll bg-transparent p-0 d-flex '></ul>
             </section>
-            <div class='instructions w-100 container col-lg-6 rounded'>
+            <div class='instructions flex-column justify-self-center align-self-center w-100 container col-lg-6 rounded'>
                 <div class='instructions__header d-flex flex-row justify-content-between'>
                     <h4 class='instructions__header--heading h4 pb-2 text-dark'>Help and how to</h4>
                     <button id='instructions-close' type="button" class="btn-close instructions__header--btn-close" aria-label="Close"></button>
@@ -269,19 +269,22 @@ class appView {
         const userScInput = document.getElementById('other-chars');
 
         if(!specChars.checked) {
-            // specChars.checked = false;
             specCharsOptions.checked = false;
         }
 
         if(specCharsOptions.checked) {
             specCharsOptions.required = true;
             userScInput.required = true;
+            userScInput.disabled = false;
         } else {
             specCharsOptions.required = false;
             userScInput.required = false;
+            userScInput.disabled = true;
         }
-
     }
+
+    // userScInput.disabled = true;
+
 
     // _scInputRequired() {
     //     const input = document.getElementById('sc-options');
@@ -378,7 +381,7 @@ class appView {
         if(password._safe === true) {
             return `
                 <button type="button" class="btn btn-icons" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Password is safe!">
-                    <svg class='safe d-flex align-self-center' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/>
+                    <svg class='safe-pw-icon d-flex align-self-center' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/>
                         <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm7 10c0 4.52-2.98 8.69-7 9.93-4.02-1.24-7-5.41-7-9.93V6.3l7-3.11 7 3.11V11zm-11.59.59L6 13l4 4 8-8-1.41-1.42L10 14.17z"/>
                     </svg>
                 </button>
@@ -389,7 +392,7 @@ class appView {
             return `
                 <button type="button" class="btn btn-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Password is vulnerable!">
 
-                    <svg class='unsafe d-flex align-self-center' xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <svg class='unsafe-pw-icon d-flex align-self-center' xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                         <g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,2L4,5v6.09c0,5.05,3.41,9.76,8,10.91c4.59-1.15,8-5.86,8-10.91V5L12,2z M18,11.09c0,4-2.55,7.7-6,8.83 c-3.45-1.13-6-4.82-6-8.83v-4.7l6-2.25l6,2.25V11.09z M9.91,8.5L8.5,9.91L10.59,12L8.5,14.09l1.41,1.41L12,13.42l2.09,2.08 l1.41-1.41L13.42,12l2.08-2.09L14.09,8.5L12,10.59L9.91,8.5z"/></g>
                     </svg>
                 </button>
