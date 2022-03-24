@@ -76,7 +76,7 @@ Additional features include the ability to copy passwords to the browser clipboa
 
 ## Getting Started
 
-Open the [live demo here](link).
+Open the [live demo here](https://pensive-snyder-295e29.netlify.app).
 
 <p align="right">(<a href="#password-generator">back to top</a>)</p>
 
@@ -106,7 +106,7 @@ There were many new and welcomed challenges which arose while developing this pr
 - Form & Data Validation
 
   - The form validation (client side) includes the following:
-    - User must select at least one (1) character type
+    - User must select at least one (1) character type.
     - The password length must be greater than or equal to the number of character types selected, e.g. if a-z, A-Z, and special characters are checked, the password length must be greater than or equal to three (3).
     - Using regular expressions pattern matching, the user input may only contain special characters, and of which the HTML vulnerable characters (&lt; &gt; &amp; &quot; &apos; &bsol;) are converted to HTML entity codes to sanitize the inputs.
     - If the 'Only' user defined special characters field is selected, the input must have special characters, a logic function and HTML form input 'required' is enabled.
@@ -128,10 +128,10 @@ This is the basic usage of the application:
 2.  Upon output of the generated password the user may:
     [![Password Generator ouput screenshot][item-screenshot]]('./images/readMeImgs/pwItem.png')
 
-    - click the icon with a shield search icon ![shield-search] which will compare the generated password to the Pwned Password API database of compromised passwords
+    - click the icon with a shield search icon ![shield-search] which will compare the generated password to the Pwned Password API database of compromised passwords.
       ![Validated-Password][checked-passwords]
 
-    - click the copy icon ![copy-icon] to copy the password to the browsers clipboard for ease of use elsewhere
+    - click the copy icon ![copy-icon] to copy the password to the browsers clipboard for ease of use elsewhere.
 
     <br>
 
