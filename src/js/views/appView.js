@@ -72,6 +72,8 @@ class appView {
             // copy password event
             if(e.target.id === 'icon-copy') {
                 const item = e.target.closest('.pw__item');
+                console.log(item)
+                console.log(this)
                 this._copy(item);
             }
         })
@@ -448,7 +450,7 @@ class appView {
     _copy(item) {
         // checks to allow clipboard access and adds selected text to browser clipboard
         this._clearAlerts();
-        const pwText = document.getElementById('passwordText').value;
+        const pwText = item.querySelector('input').value
         navigator.clipboard.writeText(pwText);
 
         this._alert('Password copied to the clipboard!', 'info');
