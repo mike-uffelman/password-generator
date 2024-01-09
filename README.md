@@ -13,7 +13,7 @@
   <p align="center">
     Simple, secure password generator
     <br />
-    <a href="https://github.com/mike-uffelman/password-generator">View Demo</a>
+    <a href="https://password-generator-mu.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/mike-uffelman/password-generator/issues">Report Bug</a>
     ·
@@ -24,7 +24,7 @@
 
 ## TL;DR 🤷‍♂️
 
-This is a password generator built with vanilla JavaScript and Bootstrap. Features include the ability to select the password length and major character types. In addition, the user can copy to the clipboard and check the vulnerability of the generated password against the Pwned Passwords API. [Demo the app here](https://pensive-snyder-295e29.netlify.app).
+This is a password generator built with vanilla JavaScript and Bootstrap. Features include the ability to select the password length and major character types. In addition, the user can copy to the clipboard and check the vulnerability of the generated password against the Pwned Passwords API. [Demo the app here](https://password-generator-mu.netlify.app/).
 
 <br>
 
@@ -76,7 +76,7 @@ Additional features include the ability to copy passwords to the browser clipboa
 
 ## Getting Started
 
-Open the [live demo here](https://pensive-snyder-295e29.netlify.app).
+Open the [live demo here](https://password-generator-mu.netlify.app/).
 
 <p align="right">(<a href="#password-generator">back to top</a>)</p>
 
